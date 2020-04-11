@@ -85,7 +85,7 @@ body{
 
 }
  #logo{
-      width: 100px;
+      width: 400px;
       height: 200px;
       right:300px;
       position: relative;
@@ -122,14 +122,14 @@ body{
                 margin-bottom: 40px;
                 position: relative;
                  left: 450px;
-                 width: 40%;
+                 width: 80%;
                 height: 50px;
                 padding-left: 20px;
                 border-radius: 5px;
             }
             #search-btn{
                 background-color:$color-r;
-                width: 50%;
+                width: 80%;
                 height: 50px;
                 border: 1px solid $color-r;
                 box-shadow: 0px,2px,black;
@@ -165,18 +165,39 @@ body{
 
         }
        
- .widget{
-    background-color:#dee3de;
-    padding: 20px;
-    width: 410px;
-    height: 450px;
-    margin-top: 30px;
-    margin-right:100px;
-    float: right;
-    font-size:15px;
- }
- div
+//  .widget{
+//     
+//     @include lgscreen()
+//     {
+        
+//     }
+//  }
+
+.widget{
+      #ad-zomaland{
+            float: left;
+            width: 70%;
+            // height: 450px;
+            height: auto;
+            margin-top: 60px;
+             margin-right: 20px;
+             @include lgscreen()
+             {
+                 display: none;
+             }
+             
+        
+        }
+.widget_form
  {
+    background-color:#dee3de;
+        padding: 20px;
+        width: 410px;
+        height: 450px;
+        margin-top: 30px;
+        margin-right:100px;
+        float: right;
+        font-size:15px;
    .search-del{
     //    width: 250px;
        height: 60px;
@@ -223,27 +244,10 @@ body{
     text-align: center;
     border-radius: 8px;
 }
-#ad-zomaland{
-    float: left;
-    width: 60%;
-    height: 450px;
-    margin-top: 60px;
-     margin-right: 20px;
-     @include lgscreen()
-     {
-         display: none;
-     }
-     
 
-}
-div{
-    #ad_h{
-         background-color: red;
-        h2{
-        color:pink;
-        }
-    
-    }
+      
+
+
 }
 //  collection
 .collections{
@@ -273,7 +277,7 @@ div{
             text-align: center;
         }
     }
-    .collection-footer{
+    .collection-bottom{
         grid-area: collection;
         width: 98.5%;
        padding: 15px - 5;
@@ -338,70 +342,6 @@ div{
 
 }
 }
-
-//       .locality-div{
-//           display:flex;
-//           flex-direction: row;
-//           justify-content: space-between;
-//           background-color:$color-wl;
-//           padding: 20px;
-//         .locality-list{
-//             li{
-//                 list-style:none;
-//                 a{
-//             color:$color-b;
-//              }
-//          }  
-//         }
-  
-//   }
-//    get a app
-// div{
-//     .get_br{
-//         border:none;
-//         padding: 35px;
-//         margin: 35px;
-//     }
-
-//     }
-
-//     #get_app_img{
-       
-//         width: 260px;
-//         margin-bottom: 20px;
-//         position: relative;
-//         left: 180px;
-//         bottom: 30px;
-//         top:10px;
-//     }
-
-//     #form_d{
-//         position:absolute;
-//         // left: 500px;
-//         width: 300px;
-//         padding: 10px;
-
-//     }
-//     #btn_getapp{
-//         @extend %btn;
-//         width:300px;
-//         position:relative;
-//          left: 500px;
-//           top: 0;
-//     }
-//     #btn_getapp:hover{
-//         @extend %btn;
-//         width:300px;
-//         background-color:#06b30e;
-//     } 
-//     .get_appimg{
-//         position: relative;
-//            left: 600px;
-//            width:200px;
-//            width:190px;
-
-//     }
-// }
 footer{
     background-color:#323232;
     margin: 15px;
@@ -497,9 +437,9 @@ footer{
      }
 #f-social{
     float:right;  
-    transform: rotate(90deg);
+    transform: rotate(0deg);
     @include lgscreen(){
-        transform: rotate(0deg);
+        transform: rotate(90deg);
     
    }  
      }
