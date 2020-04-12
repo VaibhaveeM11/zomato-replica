@@ -35,58 +35,98 @@
     
 </div>
 </header>
-   <!-- Main page banner -->
-   <section class="banner" style="background-image: url(images/bg.jpg); width:100%; height: auto; background-size: cover;">
 
-      <a href="#" class="btn_log1">Log in</a> 
-      <a href="#" class="btn_log2">Create an account</a>
-        <div class="search-restaurant">
-
-            <img src="images/zomato_flat_bg_logo.svg "alt="logo" id="logo"> <br>
-
-             <!-- <p id="search-text"><strong> Find the best restaurants, cafés, and bars in Mumbai</strong></p>
+  <section class="banner jumbotron jumbotron-fluid pt-2"  style="background-image: url(images/bg.jpg); width:100%; height: auto; background-size: cover;">
     
-        <div class="search-box">  
-              <div>
-                <select id="nav_dropbr">
-                  <option value="">Mumbai</option>
-                  <option value="">Pune</option>
-                </select>        
-              </div>
-           <div>
-            <input type="text" placeholder="Search for restaurants or cuisines..." id="search-rest">
-            <button id="search-btn">Search</button>
-           </div>
-       </div> -->
-    </div> 
-  </section>
-<!-- Order online main right section
-<div class="widget">
-  <div class="widget_item">
-    <img src="images/ad-zomaland.jpeg" alt="add" id="ad-zomaland"> 
+    <div class="container d-flex flex-row align-items-center justify-content-end">
 
-    <h2 id="headorder">Order Food Online</h2>
+        <a href="#" class="mx-3 log">Log in</a>
 
-    <h4 id="headorder">Best Restaurants deliverying to doorstep</h4>
-   </div>
-      <h4 style="text-align:center;">Enter your delivery location</h4>
-      
-      <div class="input-group mb-3 widget_form">
-        <input type="text" class="form-control search-del" placeholder="Type delivery location here" aria-label="Recipient's username" aria-describedby="button-addon2">
-        
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2 btn_detect">Detect</button>
+        <button class="btn btn-outline-secondary mx-2">Create an account</button>
+
+    </div>
+
+    <div class="container   d-flex flex-column  align-items-center">
+
+        <img src="./images/zomato_flat_bg_logo.svg" alt="" class="mt-4" width="160px" height="160px">
+
+        <h1 class="mt-4 bh1">Find the best restaurants, cafés, and bars in Mumbai</h1>
+
+    </div>
+    <div class="search-restaurant">
+
+        <div class="form-group col-12 col-sm-8 offset-sm-2 banner-section3 d-flex flex-sm-row flex-column align-items-center  mt-5">
+
+            <div class="col-sm-2 col-12 p-1">
+
+                <select class="form-control my-1 w-100">
+
+                  <option>Mumbai</option>
+                  <option>...</option>
+                </select>
+            </div>
+            <div class="col-sm-8 col-12 p-1">
+
+                <input type="text" id="search-rest" placeholder="Search for restaurants or cuisines..."
+                  class="form-control my-1 w-100">
+
+            </div>
+
+            <div class="col-sm-2 col-12 p-1">
+           
+                <button class="search-btn btn btn-danger my-1 w-100" id="search-btn">Search</button>
+
+            </div>
         </div>
+    </div>
+</section>
+<!-- Order online main right section-->
+
+  <div class="widget">
+
+    <div class="widget_item">
+
+        <img src="images/ad-zomaland.jpeg" alt="add" id="ad-zomaland"> 
+
+        <h3 id="headorder">Order Food Online</h3>
+
+        <h5 id="headorder">Best Restaurants deliverying to doorstep</h5>
+
+       </div>
+
+    <h4>Enter your delivery location</h4>
+    <div class="row my-1 p-2">
+
+      <div class="col-8 p-1">
+
+        <input type="text" class="search-del form-control mt-2" id="search-del" placeholder="Type delivery location here">
+
       </div>
-          <button class="btn_green">Order Food Online!</button><br><hr>
-          <strong style="color:green;">Use code ZOMATO to get up to 50% OFF. T&Cs apply.</strong>
-   </div>  -->
+
+      <div class="col-4 p-1">
+
+        <button class="detect-btn mt-2 btn btn-outline-secondary w-100">Detect</button>  
+
+      </div>
+    </div>
+
+     <div class="left-order">
+
+        <button class="btn_green">Order Food Online!</button>
+
+     </div>
+  </div>
+  <hr>
+  <strong style="color:green;">Use code ZOMATO to get up to 50% OFF. T&Cs apply.</strong></div>
+</div>
+</div>
+</div>
 <!-- Collection section -->
       <div class="collections">
 
         <div class="collection-top">
             <h4>Collections</h4>
-            <p>Explore curated list of top restaurants,cafes,bars and pubs in Sangli, based on trends.</p>
+            <p>Explore curated list of top restaurants,cafes,bars and pubs in mumbai, based on trends.</p>
         </div>
 
              <div class="collection-list">
@@ -240,7 +280,7 @@
   <div class="seperator"></div>
     <div class="footer-wrapper">
       <div class="footer-wrapper-head">
-        <h4>About Zomato</h4>
+        <h4><strong>About Zomato</strong></h4>
       </div> 
       <ul> 
         <li><a href="#">About Us</a></li>

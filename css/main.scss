@@ -23,13 +23,6 @@ $smscreen:437px;
          @content ;
     }
 }
-
-// @mixin smscreen {
-//     @media (max-width:437px) {
-//         @content ;
-        
-//     }
-
 *{
      box-sizing: border-box;
      font-family: $text-font-style;
@@ -50,10 +43,6 @@ body{
     background: white;
     width: 100%;
    height: auto;
-//    display: grid;
-//    grid-template-columns: 50% 50%;
-//    grid-template-areas:"h-conleft h-conright";
-
 }
 .h-conleft{
     float:left;
@@ -82,111 +71,27 @@ body{
 .banner{
     margin:20px;
     margin-right:5px;
+    .log{
+        color:$color-w;
 
-}
- #logo{
-      width: 400px;
-      height: 200px;
-      right:300px;
-      position: relative;
-     left: 580px;
-     @include lgscreen()
-     {
-        width: 400px;
-        height: 200px;
-     }
-     }
-    
-     section
-     {
-         
-.btn_log1{
-    padding: 14px;
-    position: relative;
-    left:  63em;
-    color: $color-w;
-    
-}
-.btn_log2{
-    border: 2px solid white;
-    padding: 14px;
-    float: right;
-    color: $color-w;
-   
-}
-        
-.search-box{ 
-            #search-rest
-            {
-                border: none;
-                margin-bottom: 40px;
-                position: relative;
-                 left: 450px;
-                 width: 80%;
-                height: 50px;
-                padding-left: 20px;
-                border-radius: 5px;
-            }
-            #search-btn{
-                background-color:$color-r;
-                width: 80%;
-                height: 50px;
-                border: 1px solid $color-r;
-                box-shadow: 0px,2px,black;
-                color:white;
-                // float: right;
-                margin-right: 89px;
-                border-radius: 5px;
-                top: 20px;
-                margin-top: 20px;
-        
-             }
-             #search-btn:hover{
-                background-color: red;
-        
-             }
+    }
+    .bh1{
+        color: $color-w;
 
- #nav_dropbr{
-            background-color:white;
-            width: 80%;
-            height: 50px;
-            margin-left: 40px;
-            margin-top: 60px;
-            border-radius: 5px;
-            border: none;
-        }
-     }
-     
- #search-text{
-   text-align: center;
-   color:$color-w;
-   font-size: 2em;
- }
-
-        }
-       
-//  .widget{
-//     
-//     @include lgscreen()
-//     {
-        
-//     }
-//  }
-
+    }
+}  
 .widget{
       #ad-zomaland{
             float: left;
-            width: 70%;
-            // height: 450px;
+            width: 55%;
             height: auto;
             margin-top: 60px;
              margin-right: 20px;
+             margin-left: 20px;
              @include lgscreen()
              {
                  display: none;
              }
-             
-        
         }
 .widget_form
  {
@@ -206,19 +111,6 @@ body{
         box-shadow: 2px 2px 3px gray;
         margin-top: 10px;
    }
-    #btn_detect
-    {
-         position: relative;
-         float: right;
-         width: 60px;
-         height: 60px;
-         right: 65px;
-         border: none;
-         padding: 10px;
-         top:10px;
-         border-radius: 7px;
-         background-color: $color-w;
-    }
  }
 
 .btn_green{
@@ -245,9 +137,6 @@ body{
     border-radius: 8px;
 }
 
-      
-
-
 }
 //  collection
 .collections{
@@ -259,7 +148,6 @@ body{
     .collection-top{
         margin: 15px 0px;
     }
-
 
 .collection-list{
     
@@ -293,8 +181,7 @@ body{
         width: 100%;
         background: $color-wl;
         // margin-top:130px;
-        margin: 15px;
-        
+        margin: 15px;   
         #cat-subtitle{
             color:gray;
          }
@@ -395,7 +282,6 @@ footer{
      width: 100%;
      display: flex;
      flex-direction:row;
-    //  justify-content: space-between;
      flex-wrap:wrap;
      .footer-c-head{
         width: 100%;
@@ -423,17 +309,11 @@ footer{
     width: 100%;
      a{
          display:inline-block;
-        //  flex-direction:row;
-        //  flex-wrap: wrap;
         padding: 4px;
          color: white;
          height:auto;
          text-decoration: none;
-        //  @include smscreen()
-        //  {
-        //      display: flex;
-        //      flex-direction: row;
-        //  }
+    
      }
 #f-social{
     float:right;  
