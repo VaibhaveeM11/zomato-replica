@@ -3,11 +3,9 @@ $color-g:grey;
 $color-w: white;
 $color-b:black;
 $color-wl:#e1e1dd;
-$color-r: rgb(77%,12%,23%);
 $text-font-style: "Tahoma";
 $color_gr:green;
 $lgscreen:752px; 
-$smscreen:437px;
 
    %btn{
     background-color:$color_gr;
@@ -28,7 +26,8 @@ $smscreen:437px;
      font-family: $text-font-style;
 }
 body{
-    margin:20px;
+    padding: 7px;
+    background-color: gray;
 }
 #nav_logo{
     width: 30px;
@@ -56,7 +55,7 @@ body{
      flex-direction:row;
       list-style: none;
       li{
-          margin: 15px;
+          margin: 3px;
          a{
              text-decoration: none;
              color:black;
@@ -72,7 +71,7 @@ body{
     margin:20px;
     margin-right:5px;
     .log{
-        color:$color-w;
+        color:$color-wl;
 
     }
     .bh1{
@@ -81,10 +80,23 @@ body{
     }
 }  
 .widget{
+   .order-style{
+       float: right;
+      box-shadow: 2px 2px 2px grey;
+      width:40%;
+      border: 1px solid gray;
+      height: 450px;
+      padding: 30px;
+      margin: 20px;
+      @include lgscreen(){
+        width: 100%;
+  }
+   }
+
       #ad-zomaland{
             float: left;
-            width: 55%;
-            height: auto;
+            width: 54%;
+            height:400px;
             margin-top: 60px;
              margin-right: 20px;
              margin-left: 20px;
@@ -93,53 +105,22 @@ body{
                  display: none;
              }
         }
-.widget_form
- {
-    background-color:#dee3de;
-        padding: 20px;
-        width: 410px;
-        height: 450px;
-        margin-top: 30px;
-        margin-right:100px;
-        float: right;
-        font-size:15px;
-   .search-del{
-    //    width: 250px;
-       height: 60px;
-       border-radius: 7px;
-       position: relative;
-        box-shadow: 2px 2px 3px gray;
-        margin-top: 10px;
-   }
- }
 
 .btn_green{
     background-color:$color_gr;
-    padding: 10px;
-    width: 370px;
-    margin: 1em;
-    color: $color-w;
-    text-align: center;
-    border-radius: 8px;
+    border-radius: 6px;
 
 }
 .btn_green:hover{
     background-color:#06b30e;
 }
-.btn_detect{
-    background-color:$color_gr;
-    padding: 10px;
-    padding-left: 4em;
-    padding-right: 4em;
-    margin: 1em;
-    color: $color-w;
-    text-align: center;
-    border-radius: 8px;
-}
-
 }
 //  collection
+.collection-main{
+    width: 100%;
+
 .collections{
+    margin-top: 80px;
     grid-area: collection;
     display: block;
     overflow: hidden;
@@ -147,6 +128,7 @@ body{
 
     .collection-top{
         margin: 15px 0px;
+        color:grey;
     }
 
 .collection-list{
@@ -171,17 +153,38 @@ body{
        padding: 15px - 5;
         height: auto;
         text-align: center;
-        background-color: white;
+        background-color:whitesmoke;
         color: rgb(255, 61, 61) ;
+        &:hover{
+            background-color: $color-wl;
+
+        }
         
     }
 }
+}
+
 //  quick search
     .categories{
         width: 100%;
-        background: $color-wl;
-        // margin-top:130px;
-        margin: 15px;   
+       padding: 20px;
+        .quick-searchlist{
+            background: $color-wl;
+
+            ul{ 
+              padding: 50px;
+            border:none;
+            }
+        }
+         img{
+             width: 5em;  
+             &:hover
+             {
+                 opacity: 0.2;
+             }
+
+         }
+    
         #cat-subtitle{
             color:gray;
          }
@@ -197,10 +200,6 @@ body{
 //    popular places in mumbai
 .localities{
     padding: 20px;
-
-    #loc-title{
-
-            }
     #loc-subtitle{
      color:grey;
      text-align: left;
@@ -248,16 +247,16 @@ footer{
                 border-radius: 7px;
                       }
 .seperator{
-    width: 90%;
+    width: 97%;
     height: 0.5px;
-  background-color:$color-wl;    
+  background-color:$color-g;    
   margin: 15px;
 }
-
      
 .footer-wrapper{
      display: flex;
      flex-wrap: wrap;
+     justify-content: space-between;
      .footer-wrapper-head{  
         
          h4{
@@ -271,9 +270,11 @@ footer{
      ul{
          list-style-type: none;
          li{
-             a{
-                 color:white;
-                 text-decoration: none;
+             padding: 5px;
+             a{ 
+                 padding: 45px;
+                color:$color-wl;
+                 text-decoration:none;
              }
          }
      }
@@ -282,6 +283,7 @@ footer{
      width: 100%;
      display: flex;
      flex-direction:row;
+     justify-content: space-between;
      flex-wrap:wrap;
      .footer-c-head{
         width: 100%;
@@ -293,12 +295,14 @@ footer{
      ul{
          list-style-type: none;
          li{
+             padding: 5px;
              a{
-                 color:white;
+                 color:$color-wl;
                  text-decoration:none;
              }
          }
      } 
+     
      @include lgscreen(){
         flex-direction: row;
    }
@@ -310,13 +314,13 @@ footer{
      a{
          display:inline-block;
         padding: 4px;
-         color: white;
+         color:$color-wl;
          height:auto;
          text-decoration: none;
-    
-     }
+         }
 #f-social{
     float:right;  
+    width:5.2em;
     transform: rotate(0deg);
     @include lgscreen(){
         transform: rotate(90deg);
