@@ -29,42 +29,10 @@ body{
     padding: 7px;
     background-color: gray;
 }
-#nav_logo{
-    width: 30px;
-    height: 30px;
-}
-#nav-link{
-    color: #000;
-
-}
-.h-container{
-    padding-bottom: 40px;
-    background: white;
-    width: 100%;
-   height: auto;
-}
-.h-conleft{
-    float:left;
-    top: 0px;
-}
-.h-conright{
-    float: right;
-    top: 0px;
-  ul{ 
-      display:flex;
-     flex-direction:row;
-      list-style: none;
-      li{
-          margin: 3px;
-         a{
-             text-decoration: none;
-             color:black;
-         }
-      }
-      @include lgscreen(){
-            flex-direction: column;
-      }
-  }
+.topstyle{
+    li{
+        list-style-type: none;
+    }
 }
 // for bg
 .banner{

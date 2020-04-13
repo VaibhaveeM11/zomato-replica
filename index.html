@@ -9,7 +9,7 @@
 </head>
 <body>
  <!-- Header Of page -->
-<header class="h-container">     
+<!-- <header class="h-container">     
   <div>
     <div class="h-conleft">
       <img src="images/get-the-app-plain.svg" alt="app"id="nav_logo"/><a href="#" id="nav-link">Get A App</a>
@@ -34,8 +34,45 @@
  </div>
     
 </div>
-</header>
+</header> -->
+<header class="h-container container">
 
+<div class="row">
+
+  <div class="col-6 d-flex flex-row align-items-center align-items-sm-start">
+      <ul>
+
+          <li class="d-flex flex-row align-items-center">
+              <img src="./images/get-the-app-plain.svg" alt="" width="40px">
+              <span>Get the app</span>
+
+          </li>
+   
+        </ul>
+  </div>
+  <div class="col-6 col-sm-6"> 
+      
+      <ul class="d-flex align-items-center flex-column flex-sm-row justify-content-sm-around topstyle">
+       
+          <li>
+              <a id="nav_item_1" class="d-flex flex-row align-items-center">
+                  <img src="./images/order-online.svg" alt="" width="40px"> Order Food
+              </a>
+          </li>
+          <li>
+              <a id="nav_item_2" class="d-flex flex-row align-items-center">
+                <img src="./images/book-a-table.svg" alt="" width="40px"> Book a Table
+              </a>
+          </li>
+          <li>
+              <a id="nav_item_3" class="d-flex flex-row align-items-center">
+                <img src="./images/gold.svg" alt="" width="40px" > Zomato Gold
+              </a>
+          </li>
+      </ul>
+  </div>
+</div>
+</header>
   <section class="banner jumbotron jumbotron-fluid pt-2"  style="background-image: url(images/bg.jpg); width:100%; height: auto; background-size: cover;">
     
     <div class="container d-flex flex-row align-items-center justify-content-end">
@@ -93,7 +130,7 @@
         <h5 id="headorder">Best Restaurants deliverying to doorstep</h5>
 
        </div>
-   <div class="order-style">
+   <div class=" widget order-style">
     <h4>Enter your delivery location</h4>
     <div class="row my-1 p-2">
 
@@ -194,7 +231,7 @@
      <h2 id="cat-title">Quick Searches</h2>
      <p id="cat-subtitle">Discover restaurants by type of meal</p>
         <div class="quick-searchlist">
-          <ul>
+          <ul class="category-list">
             <div>
             <li><img src="images/delivery.png" alt=""></li>
             delivery

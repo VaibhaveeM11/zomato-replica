@@ -10,59 +10,8 @@ body {
   background-color: gray;
 }
 
-#nav_logo {
-  width: 30px;
-  height: 30px;
-}
-
-#nav-link {
-  color: #000;
-}
-
-.h-container {
-  padding-bottom: 40px;
-  background: white;
-  width: 100%;
-  height: auto;
-}
-
-.h-conleft {
-  float: left;
-  top: 0px;
-}
-
-.h-conright {
-  float: right;
-  top: 0px;
-}
-
-.h-conright ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  list-style: none;
-}
-
-.h-conright ul li {
-  margin: 3px;
-}
-
-.h-conright ul li a {
-  text-decoration: none;
-  color: black;
-}
-
-@media (max-width: 752px) {
-  .h-conright ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
+.topstyle li {
+  list-style-type: none;
 }
 
 .banner {
