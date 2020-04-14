@@ -1,339 +1,167 @@
-/* Add your css here */
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: "Tahoma";
-}
-
-body {
-  padding: 7px;
-  background-color: gray;
-}
-
-.topstyle li {
-  list-style-type: none;
+.topbarimg {
+  width: 2rem;
 }
 
 .banner {
-  margin: 20px;
-  margin-right: 5px;
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  background-color: #0000006b;
 }
 
-.banner .log {
-  color: #e1e1dd;
-}
-
-.banner .bh1 {
+.banner-section1 a {
   color: white;
 }
 
-.widget_left {
-  float: left;
+.banner-section1 button {
+  border: 2px solid  white;
+  color: white;
+  border-radius: none;
 }
 
-#ad-zomaland {
-  float: left;
-  width: 54%;
-  height: 400px;
-  margin-top: 60px;
-  margin-right: 20px;
-  margin-left: 20px;
-}
-
-@media (max-width: 752px) {
-  #ad-zomaland {
-    display: none;
-  }
-}
-
-#ad-zomaland .widget .order-style {
-  float: right;
-  -webkit-box-shadow: 2px 2px 2px grey;
-          box-shadow: 2px 2px 2px grey;
-  width: 40%;
-  border: 1px solid gray;
-  height: 450px;
-  padding: 30px;
-  margin: 20px;
-}
-
-@media (max-width: 752px) {
-  #ad-zomaland .widget .order-style {
-    width: 100%;
-  }
-}
-
-#ad-zomaland .widget .btn_green {
-  background-color: green;
-  border-radius: 6px;
-}
-
-#ad-zomaland .widget .btn_green:hover {
-  background-color: #06b30e;
-}
-
-#ad-zomaland .collection-main {
-  width: 100%;
-}
-
-#ad-zomaland .collection-main .collections {
-  margin-top: 80px;
-  grid-area: collection;
-  display: block;
-  overflow: hidden;
-  height: auto;
-}
-
-#ad-zomaland .collection-main .collections .collection-top {
-  margin: 15px 0px;
-  color: grey;
-}
-
-#ad-zomaland .collection-main .collections .collection-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  grid-area: collection;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 0px;
-}
-
-#ad-zomaland .collection-main .collections .card {
-  margin-right: 15px;
-}
-
-@media (max-width: 752px) {
-  #ad-zomaland .collection-main .collections .card {
-    width: 48%;
-    margin: 0 0 5px 5px;
-    text-align: center;
-  }
-}
-
-#ad-zomaland .collection-main .collections .collection-bottom {
-  grid-area: collection;
-  width: 98.5%;
-  padding: 10px;
-  height: auto;
+.banner-section2 h1 {
+  font-size: 28px;
+  color: white;
+  font-weight: lighter;
   text-align: center;
-  background-color: whitesmoke;
-  color: #ff3d3d;
 }
 
-#ad-zomaland .collection-main .collections .collection-bottom:hover {
-  background-color: #e1e1dd;
+.banner-section2 img {
+  width: 128px;
+  height: 128px;
 }
 
-#ad-zomaland .categories {
+.main-widget h1 {
+  font-size: 25px;
+}
+
+.main-widget small {
+  font-size: 15px;
+  color: gray;
+}
+
+.main-widget .subwidget {
+  background-color: #fff;
+  border: 1px solid #00000021;
+  border-radius: 2px;
+}
+
+.main-widget .subwidget h4 {
+  font-size: 18px;
+}
+
+.collection h1 {
+  font-size: 25px;
+}
+
+.collection small {
+  font-size: 15px;
+  color: gray;
+}
+
+.collection img {
   width: 100%;
-  padding: 20px;
 }
 
-#ad-zomaland .categories .quick-searchlist {
-  background: #e1e1dd;
+.collection_item .d-flex {
+  border: 1px solid #00000021;
+  background-color: white;
 }
 
-#ad-zomaland .categories .quick-searchlist ul {
-  padding: 50px;
-  border: none;
+.collbutton {
+  border: 1px solid #00000021;
+  background-color: white;
+  color: rgba(158, 18, 18, 0.89);
 }
 
-#ad-zomaland .categories img {
-  width: 5em;
+.categories h2 {
+  font-size: 25px;
 }
 
-#ad-zomaland .categories img:hover {
-  opacity: 0.2;
-}
-
-#ad-zomaland .categories #cat-subtitle {
+.categories p {
+  font-size: 15px;
   color: gray;
 }
 
-#ad-zomaland .categories ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  list-style-type: none;
-  padding: 25px;
+.category-list {
+  height: 10rem;
+  border: 1px solid #00000021;
+  background-color: white;
 }
 
-#ad-zomaland .localities {
-  padding: 20px;
+.category-list img {
+  width: 3rem;
 }
 
-#ad-zomaland .localities #loc-subtitle {
-  color: grey;
+.category-list img:hover {
+  opacity: 0.4;
+}
+
+.category-list li {
+  cursor: pointer;
+}
+
+.localities h2 {
+  font-size: 25px;
+}
+
+.localities p {
+  font-size: 15px;
+  color: gray;
+}
+
+.locality-list {
+  border: 1px solid #00000021;
+  background-color: white;
+  text-align: center;
+}
+
+.locality-list li {
   text-align: left;
+  margin: 1rem 0 0 0;
 }
 
-#ad-zomaland .localities .locality-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  background-color: #e1e1dd;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-#ad-zomaland .localities .locality-div .locality-list li {
-  list-style: none;
-  padding: 7px;
-}
-
-#ad-zomaland .localities .locality-div .locality-list li a {
-  text-decoration: none;
-  color: black;
-}
-
-#ad-zomaland .localities .locality-div .locality-list li #loc-span {
-  color: gray;
-}
-
-#ad-zomaland footer {
-  background-color: #323232;
-  margin: 15px;
-}
-
-#ad-zomaland footer #logo_bottom {
-  width: 100px;
-  height: 200px;
-  right: 300px;
-  margin-left: 20px;
-}
-
-#ad-zomaland footer #footer_upsearch {
-  float: right;
+footer {
   background-color: black;
-  color: #e1e1dd;
-  margin: 2em;
-  width: 200px;
-  padding: 10px;
+  color: white;
+}
+
+footer img {
+  width: 4rem;
   border-radius: 7px;
 }
 
-#ad-zomaland footer .seperator {
-  width: 97%;
-  height: 0.5px;
-  background-color: grey;
-  margin: 15px;
+.footerwidget ul li {
+  cursor: pointer;
+  margin: 1rem 0 0 0;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.554);
 }
 
-#ad-zomaland footer .footer-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.widgettitle {
+  font-size: 20px;
+  font-weight: 900;
 }
 
-#ad-zomaland footer .footer-wrapper .footer-wrapper-head h4 {
-  color: #e1e1dd;
+.icon {
+  color: white;
 }
 
-#ad-zomaland footer .footer-wrapper ul {
-  list-style-type: none;
+.patch001, #patch007, .patch005 {
+  display: none;
 }
 
-#ad-zomaland footer .footer-wrapper ul li {
-  padding: 5px;
+.widget div div button:nth-child(2) {
+  margin: -5px;
+  border: 0;
+  width: 0;
+  padding: 0;
+  font-size: 1px;
 }
 
-#ad-zomaland footer .footer-wrapper ul li a {
-  padding: 45px;
-  color: #e1e1dd;
-  text-decoration: none;
-}
-
-#ad-zomaland footer .footer_countries {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-#ad-zomaland footer .footer_countries .footer-c-head {
-  width: 100%;
-}
-
-#ad-zomaland footer .footer_countries .footer-c-head h4 {
-  color: #e1e1dd;
-}
-
-#ad-zomaland footer .footer_countries ul {
-  list-style-type: none;
-}
-
-#ad-zomaland footer .footer_countries ul li {
-  padding: 5px;
-}
-
-#ad-zomaland footer .footer_countries ul li a {
-  color: #e1e1dd;
-  text-decoration: none;
-}
-
-@media (max-width: 752px) {
-  #ad-zomaland footer .footer_countries {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-}
-
-#ad-zomaland footer .footer_bottom {
-  width: 100%;
-}
-
-#ad-zomaland footer .footer_bottom a {
-  display: inline-block;
-  padding: 4px;
-  color: #e1e1dd;
-  height: auto;
-  text-decoration: none;
-}
-
-#ad-zomaland footer .footer_bottom #f-social {
-  float: right;
-  width: 5.2em;
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-}
-
-@media (max-width: 752px) {
-  #ad-zomaland footer .footer_bottom #f-social {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-  }
+.widget {
+  padding: 0.5rem;
 }
 /*# sourceMappingURL=style.css.map */
