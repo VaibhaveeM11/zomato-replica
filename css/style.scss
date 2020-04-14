@@ -46,9 +46,25 @@ body{
         color: $color-w;
 
     }
-}  
+} 
+.widget_left{
+    float: left;
+}
+
+#ad-zomaland{
+    float: left;
+    width: 54%;
+    height:400px;
+    margin-top: 60px;
+     margin-right: 20px;
+     margin-left: 20px;
+     @include lgscreen()
+     {
+         display: none;
+     }
+
 .widget{
-   .order-style{
+    .order-style{
        float: right;
       box-shadow: 2px 2px 2px grey;
       width:40%;
@@ -58,21 +74,10 @@ body{
       margin: 20px;
       @include lgscreen(){
         width: 100%;
-  }
+  
    }
 
-      #ad-zomaland{
-            float: left;
-            width: 54%;
-            height:400px;
-            margin-top: 60px;
-             margin-right: 20px;
-             margin-left: 20px;
-             @include lgscreen()
-             {
-                 display: none;
-             }
-        }
+    }s
 
 .btn_green{
     background-color:$color_gr;
@@ -297,4 +302,5 @@ footer{
      }
 
 }              
+}
 }
